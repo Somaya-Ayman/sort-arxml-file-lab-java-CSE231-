@@ -65,11 +65,11 @@ public class Test{
             catch (IOException e) {
                 e = new IOException("IO Exception");
             }
-            catch (EmptyAutosarFileException e) {
+      /*      catch (EmptyAutosarFileException e) {
                 e = new EmptyAutosarFileException("empty file");
             }
 
-     
+     */
      
      
 }  
