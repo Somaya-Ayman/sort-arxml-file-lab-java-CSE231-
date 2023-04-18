@@ -8,6 +8,7 @@ public class Test{
     public static void main(String[] args) {
         try {
             // TODO code application logic here
+            System.out.println("");
             System.out.println("enter file name");
             Scanner sc = new Scanner(System.in);
             String fileName = sc.nextLine();
