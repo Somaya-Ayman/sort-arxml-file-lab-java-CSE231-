@@ -1,27 +1,54 @@
-Exception Handling Assignment
-Write a program that reads an ARXML file containing a list of containers, each with a unique ID, and reorders the containers alphabetically by their name sub- container “"SHORT-NAME"
-”. The program should write the reordered containers to a new ARXML file.
+
+<span style="color:blue">Write a program that reads an ARXML file containing a list of containers,
+	each with a unique ID, and reorders the containers alphabetically by their name sub- container "SHORT-NAME"</span>
+ 
+
+The program should write the reordered containers to a new ARXML file.
+
 ARXML stands for Autosar xml
+
 Autosar stands for AUTomotive Open System ARchitecture
-Delivery:
+
+<hr>
+
+<bold>Delivery:</bold>
+
 1- Link to a git-hub repository including your implementation.
+
 2- Readme.md file must exist with proper documentation.
+
 3- Batch file which invoke the three possible cases:
-• Normal case --> provide the input file and specify it’s name inside the batch script.
-• Not valid Autosar file case --> provide the file also
-• Empty file
-• The goal is that I’m able to run the batch file to test all cases.
-• Include compilation of the java file at the beginning.
+
+
+            • Normal case --> provide the input file and specify it’s name inside the batch script.
+
+            • Not valid Autosar file case --> provide the file also
+
+            • Empty file
+
+            • The goal is that I’m able to run the batch file to test all cases.
+
+            • Include compilation of the java file at the beginning.
+
+<hr>
+
 Requirements:
+
 1- The name of the arxml file shall be an argument which needs to passed through the command line.
+
 2- If the file is not having .arxml extension then you should trigger a user defined handled exception “NotVaildAutosarFileException”.
+
 3- If the file is empty, then you should trigger user defined unhandled exception “EmptyAutosarFileException”
+
 4- The output file shall be named as the same of the input file concatenated with “_mod.arxml”
 • e.g. if the input was named “Rte_Ecuc.arxml” then the output should be “Rte_Ecuc_mod.arxml”.
+
 5- Assume any missing requirement.
 
-Sample input file:
+<hr>
 
+Sample input file:
+```MySQL
 <?xml version="1.0" encoding="UTF-8"?>
 <AUTOSAR>
     <CONTAINER UUID="198ae269-8478-44bd-92b5-14982c4ff68a">
@@ -37,9 +64,10 @@ Sample input file:
         <LONG-NAME>CC</LONG-NAME>
     </CONTAINER>
 </AUTOSAR>
+```
 
 Output should be:
-
+```MySQL
 <?xml version="1.0" encoding="UTF-8"?>
 <AUTOSAR>
     <CONTAINER UUID="198ae269-8478-44bd-92b5-14982c4ff68b">
@@ -55,3 +83,4 @@ Output should be:
         <LONG-NAME>CC</LONG-NAME>
     </CONTAINER>
 </AUTOSAR> 
+```
