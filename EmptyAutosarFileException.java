@@ -1,4 +1,4 @@
-public class EmptyAutosarFileException extends Exception{
+public class EmptyAutosarFileException extends RuntimeException{
 
     public EmptyAutosarFileException(String message) {
         System.out.println(message);
