@@ -8,10 +8,10 @@ public class Test{
     public static void main(String[] args) {
         try {
             // TODO code application logic here
-            System.out.println("");
-            System.out.println("enter file name");
+           // System.out.println("");
+            //System.out.println("enter file name");
             Scanner sc = new Scanner(System.in);
-            String fileName = sc.nextLine();
+            String fileName =args[0];
 
 			//args[0];
                  //  sc.nextLine();
@@ -55,7 +55,8 @@ public class Test{
             for(int i =0; i<containers.size(); i++){
              outputSream.write(containers.get(i).toString().getBytes());       
         }
-             outputSream.write("</AUTOSAR>\n".getBytes());           
+             outputSream.write("</AUTOSAR>\n".getBytes());     
+            System.out.println("file sorted successfily go check");
             
                 }
        
